@@ -59,7 +59,7 @@ public class Fraction {
 	public int getDenominator() {
 		return denominator;
 	}
-	/** 	LEBAS Yaël
+	/** 	LEBAS YaÃ«l
 	 * If the denominator is different from zero, the fraction is changed. 
 	 * After the operation, the fraction is reduced. 
 	 * Nothing is done in case of nul denominator for now : this will have to be change 
@@ -114,12 +114,14 @@ public class Fraction {
 		return null;
 	}
 	
-	/** 	TANG Jean-Michaël
+	/** 	TANG Jean-MichaÃ«l
 	 * Computes the produc of two fractions.  Operands are left unmodified. 
 	 * @param f a non null fraction
 	 * @return a new fraction which is the product of f and the current fraction, in its reduced form. 
 	 */
 	public Fraction multiply(Fraction f) {
+		this.numerator *= f.getNumerator();
+		this.denominator *= f.getDenominator();
 		return null;
 	}
 	
