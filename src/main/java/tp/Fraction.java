@@ -120,7 +120,7 @@ public class Fraction {
 	 * @return a new fraction which is the product of f and the current fraction, in its reduced form. 
 	 */
 	public Fraction multiply(Fraction f) {
-		return null;
+		return f.getNumerator()*f.getDenominator();
 	}
 	
 	/** VALENTIN Morgan
